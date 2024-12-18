@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    background-image: linear-gradient(to right top, #0d1c33, #0d1a2c, #0e1825, #0e161e, #0f1317);
+}
+
+.nav-bar{
+    position: fixed;
+   background-image: linear-gradient(to right top, #0d1c33, #0d1a2c, #0e1825, #0e161e, #0f1317);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+
+.nav-bar .logo{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 67px;
+    animation: slideRight 1s ease forwards;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-left: 55px;
+    margin-right: 38px;
+    animation: slideTop 1s ease forwards;
+}
+.nav-bar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover a,
+.nav-bar ul li.active a {
+    color: rgb(237, 244, 242);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 30px 120px;
+    color: white;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.home .profile-photo img{
+    width: 310px;
+    position: relative;
+    top: 9px;
+    margin-top: -160px;
+    padding-left: 150px;
+    animation: slideRight 1s ease forwards;
+}
+
+
+.home-page h1{
+    font-size: 50px;
+}
+.home-page h2{
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.home-page span{
+    color: #1E90FF;
+}
+
+.home-page p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.home-page .btn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cv-btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fcfbff;
+    border: 2px solid #08004f;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #08004f;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home-page .cv-btn:hover{
+    background: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.home-page .btn .icon{
+    margin-left: 20px;
+}
+
+.home-page .icon{
+    padding: 14px 20px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-page .icon a{
+    display: inline-flex;
+    border: 2px solid #ebeaf0;
+    border-radius: 50%;
+    padding: 8px;
+    color: #e5e4ea;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.home-page  .icon a:hover{
+    background: #ceccd9;    
+    color: rgb(19, 3, 3);
+    box-shadow: 0 0 10px #e6e5e9;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+}
+.separation{
+    height: 7px;
+    background-color: rgb(78, 76, 76);
+}
+.aboutme{
+    width: 100%;
+}
+
+
+
+
+ .container .project-one:hover{
+    transform: scale(1.05);
+   
+    
+}
+
+.container{
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: -140px;
+}
+
+.Project{
+    height: 100vh;
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 23px;
+    margin-top: -61px;
+    height: 100vh;
+}
+
+.about-img img{
+    width: 350px;
+}
+
+ .container .project-one img{
+    position: relative;
+    width: 349px;
+    height: 360px;
+    margin-top: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .work{
+    display: flex;
+}
+
+ .container .work h1{
+    color: white;
+    position: absolute;
+    font-size: 37px;
+    margin-left: 36px;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    line-height: 42px;
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 27px;
+}
+
+.footer p {
+    margin: 0;
+}
